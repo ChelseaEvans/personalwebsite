@@ -1,0 +1,14 @@
+{
+  "name": "chat-app",
+  "description": "Chat App",
+  "version": "0.0.2",
+  "engines": {
+    "node": "0.10.30"
+  },
+  "dependencies": {
+    "express": "4.7.x",
+    "underscore": "1.6.x"
+  },
+  "devDependencies": {
+  }
+}
