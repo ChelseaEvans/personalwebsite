@@ -23,7 +23,7 @@ global.Website = {};
 //app settings
 app.set('strict routing', true);
 
-app.use(express.static(path.join(__dirname, '/bower_components')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 /* =========================================================================
  *
