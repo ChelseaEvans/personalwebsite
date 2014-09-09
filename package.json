@@ -7,8 +7,8 @@
   },
   "dependencies": {
     "express": "4.7.x",
+    "newrelic": "^1.11.0",
     "underscore": "1.6.x"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
