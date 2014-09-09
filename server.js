@@ -6,6 +6,7 @@
  *
  * ========================================================================= */
 var ENV = process.env.NODE_ENV || 'development';
+var PORT = process.env.PORT || 4000;
 
 /* =========================================================================
  *
@@ -38,6 +39,6 @@ app.get('/about', function(req, res) {
 });
 
 //start server
-http.createServer(app).listen(4000, function() {
-    console.log('express server listening on port ' + 4000);
+http.createServer(app).listen(PORT, function() {
+    console.log('express server listening on port ' + PORT);
 });
