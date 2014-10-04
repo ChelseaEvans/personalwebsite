@@ -35,11 +35,11 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', function(req, res) {
   res.sendfile('views/home.html');
 });
-app.get('/about', function(req, res) {
-  res.sendfile('views/about.html');
-});
+
+var projectController = require('./api/controllers/project');
+app.get('/projects', projectController.get);
 
 //start server
 http.createServer(app).listen(PORT, function() {
-    console.log('express server listening on port ' + PORT);
+  console.log('express server listening on port ' + PORT);
 });
