@@ -6,8 +6,8 @@ var request = require('request');
 /*
  * Constants
  */
-var BEHANCE_API_URL = 'http://behance.net/v2';
-var API_KEY = 'yUS47Pbe8rF4ChPBVIL0T62IXCII3FEm';
+var BEHANCE_API_URL = 'https://www.behance.net/v2/';
+var API_KEY = 'yUS47Pbe8rF4ChPBVlL0T62lXCll3FEm';
 
 /*
  * Constructor
@@ -26,14 +26,9 @@ ProjectController.prototype.get = function(res, res, next) {
     }
   };
 
-  console.log(options.url);
-
   request(options, function(error, response, body) {
-    console.log(body);
-
     var parsed = JSON.parse(body);
-
-    res.status(200).json(response);
+    res.status(200).json(parsed.projects);
   });
 };
 
