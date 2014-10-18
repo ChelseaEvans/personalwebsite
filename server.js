@@ -36,8 +36,20 @@ app.get('/', function(req, res) {
   res.sendfile('views/home.html');
 });
 
-var projectController = require('./api/controllers/project');
-app.get('/projects', projectController.get);
+app.get('/project-webmd', function(req, res) {
+  res.sendfile('views/project-webmd.html');
+});
+
+app.get('/project-truespirit', function(req, res) {
+  res.sendfile('views/project-truespirit.html');
+});
+
+app.get('/project-timetogo', function(req, res) {
+  res.sendfile('views/project-timetogo.html');
+});
+
+// var projectController = require('./api/controllers/project');
+// app.get('/projects', projectController.get);
 
 //start server
 http.createServer(app).listen(PORT, function() {
