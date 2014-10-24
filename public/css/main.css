@@ -241,7 +241,7 @@ img.center-block {
     text-align: center;
 }
 #main p {
-    padding: 180px 0 260px 0;
+    padding: 200px 0 280px 0;
     color: white;
     font-size: 100px;
     font-weight: 300;
@@ -294,7 +294,7 @@ img.center-block {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 40px;
+    padding: 80px 40px;
 }
 #about img {
     float: right;
@@ -304,7 +304,7 @@ img.center-block {
     padding: 0 480px 0 0;
     color: white;
     font-size: 24px;
-    margin: 40px 10px;
+    margin: 20px 10px;
     font-family: 'Alegreya', serif;
     line-height: 1.5;
 }
