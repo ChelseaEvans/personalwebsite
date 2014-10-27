@@ -230,36 +230,60 @@ img.center-block {
 /*=====================* main *=============================================================*/
 
 #main {
-    color: #f2f2f2;
-    background: url('/images/banner.png');
-    background-size: 100% 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /*    background-attachment: fixed;*/
-    
-    text-align: center;
+    padding: 300px 40px 100px 40px;
 }
-#main p {
-    padding: 200px 0 280px 0;
+#main h1 {
+    padding-left: 50px;
+    position: absolute;
     color: white;
-    font-size: 100px;
-    font-weight: 300;
-    letter-spacing: 5px;
-    margin: 0;
+}
+#main h2 {
+    padding-top: 100px;
+    color: #0f4579;
+    float: right;
+}
+#main-circle {
+    background: #ff6666;
+    display: block;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    z-index: -2;
+    top: -200px;
+    left: -80px;
+}
+#main img {
+    z-index: -1;
+    display: block;
+    position: relative;
+    left: 210px;
+    top: 20px;
+    border: 10px solid #ff6666;
+}
+#main-circle-two {
+    background: #ff6666;
+    display: block;
+    border-radius: 100%;
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    z-index: -2;
+    float: right;
 }
 /*==================== work =====================*/
 
 #work {
     overflow: hidden;
     padding: 60px 0 100px 0;
+    background-color: #0f4579;
 }
-#work h2 {
+#work h1 {
     padding: 0 0 40px 0;
-    color: #0f4579;
+    color: #ff6666;
+    z-index: 2;
 }
 #work img {
-    border: 4px solid #ebedef;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     /* For Webkit browsers */
@@ -274,7 +298,8 @@ img.center-block {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     filter: none;
-    border: 4px solid #ff6666;
+    border-left: 10px solid #ff6666;
+    border-right: 10px solid #ff6666;
 }
 #work p {
     font-family: "futura-pt", sans-serif;
@@ -282,32 +307,41 @@ img.center-block {
     font-weight: 500;
     font-size: 30px;
     padding: 20px 0 0 0;
-    color: #161a22;
+    color: #ebedef;
 }
+
 /*=================== about ======================*/
 
 #about {
-    color: #ebedef;
-    background: url('/images/me.jpg');
-    background-size: 100% 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     padding: 80px 40px;
 }
-#about img {
-    float: right;
-    padding: 0 0 0 30px;
+#about h1 {
+    color: #0f4579;
 }
 #about p {
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px 0;
     font-family: 'Alegreya', serif;
     line-height: 1.5;
+    color: #0f4579;
 }
-#about h2 {
-    color: #ebedef;
+#about-circle {
+    background: #ff6666;
+    display: block;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
+}
+#about-circle-two {
+    background: #ff6666;
+    display: block;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
 }
 /*=====================* footer *==========================================================*/
 
@@ -353,11 +387,7 @@ img.center-block {
         padding-top: 10px;
         clear: both;
     }
-    #about p {
-        padding: 0 300px 0 0;
-    }
     #work img {
-        border: 4px solid #ebedef;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
         /* For Webkit browsers */
@@ -372,15 +402,18 @@ img.center-block {
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
         filter: none;
-        border: 4px solid #ebedef;
+        border: 0px;
     }
 }
 /*=========* XS *==========*/
 
 @media (max-width: 768px) {
-    #main p {
-        font-size: 60px;
-    }
+h1 {
+    font-size: 44px;
+}
+.bg-block h1 {
+margin-top: 100px;
+}
     #project-links li {
         display: block;
         padding: 5px;
@@ -392,12 +425,6 @@ img.center-block {
         display: block;
         padding: 10px 0;
     }
-    #about {
-        background: #0f4579;
-    }
-    #about p {
-        padding: 10px 0;
-    }
     #links li {
         display: block;
         padding: 10px 0;
@@ -406,6 +433,28 @@ img.center-block {
         text-align: center;
         float: none;
     }
+    #main {
+        background-color: #ff6666;
+        padding: 200px 20px 20px 20px
+    }
+    #main img {
+        z-index: 0;
+        border: 10px solid white;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
+    }
+    #main h1 {
+        z-index: 1;
+        position: static;
+        padding: 0;
+        text-align: center;
+    }
+    #main h2 {
+    padding-top: 20px;
+}
+
+
 }
 /*=========* even more XS *==========*/
 
