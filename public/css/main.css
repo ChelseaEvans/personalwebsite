@@ -279,7 +279,7 @@ img.center-block {
     z-index: -2;
     float: right;
 }
-/*==================== work =====================*/
+/*=====================* work *==========================================================*/
 
 #work {
     overflow: hidden;
@@ -314,10 +314,10 @@ img.center-block {
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
-    padding: 20px 0 0 0;
+    padding: 20px 0;
     color: #ebedef;
 }
-/*=================== about ======================*/
+/*=====================* about *==========================================================*/
 
 #about {
     padding: 80px 40px;
