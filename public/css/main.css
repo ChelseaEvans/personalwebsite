@@ -13,7 +13,7 @@ h1 {
     font-size: 60px;
     color: #ff6666;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
 }
 h2 {
     font-size: 40px;
@@ -31,13 +31,13 @@ h4 {
     font-size: 20px;
     color: #3f6790;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 300;
 }
 h5 {
     font-size: 20px;
     color: #3f6790;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
 }
 a:hover {
     text-decoration: none;
@@ -94,6 +94,7 @@ a:hover {
     font-weight: 300;
     border-width: 4px;
     border-style: solid;
+    margin: 0 10px;
 }
 .btn-primary {
     background-color: #ff6666;
@@ -107,6 +108,8 @@ a:hover {
 .btn-lg {
     padding: 10px 36px;
 }
+
+
 /*=======* caption *=======*/
 
 .caption {
