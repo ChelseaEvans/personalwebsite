@@ -92,7 +92,7 @@ a:hover {
     font-family: "futura-pt", sans-serif;
     font-style: normal;
     font-weight: 300;
-    border-width: 4px;
+    border-width: 3px;
     border-style: solid;
     margin: 0 10px;
 }
@@ -200,6 +200,7 @@ img.center-block {
     display: inline;
     padding: 20px;
 }
+
 /*=====================* header *==========================================================*/
 
 #header {
@@ -345,15 +346,34 @@ img.center-block {
     position: absolute;
     z-index: -2;
 }
-#about-circle-two {
-    background: #ff6666;
-    display: block;
-    border-radius: 100%;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    z-index: -2;
+
+/*=====================* email *==========================================================*/
+
+#email {
+    padding: 80px 0 100px 0;
 }
+
+#email h2 {
+    font-size: 36px;
+    color: #0f4579;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#btn-email {
+    font-size: 24px;
+    background-color: #0f4579;
+    border-color: #ebedef;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#btn-email:hover {
+    background-color: #ffffff;
+    border-color: #ebedef;
+    color: #0f4579;
+}
+
 /*=====================* footer *==========================================================*/
 
 #footer {
