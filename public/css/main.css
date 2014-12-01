@@ -7,7 +7,7 @@ body {
     color: #333333;
 }
 h1, h2, h3, h5 {
-    font-family: "proxima-nova-alt", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
 }
 h1 {
     font-size: 60px;
@@ -29,6 +29,7 @@ h4 {
     font-size: 24px;
     font-style: italic;
     font-weight: 700;
+    font-family: "adobe-caslon-pro", serif;
 }
 h5 {
     font-size: 20px;
@@ -44,36 +45,6 @@ a:hover {
 /*===================* components *====================================================*/
 /*=======* fonts *=======*/
 
-.font-serif-thin {
-    font-family: "proxima-nova-alt", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-}
-.font-serif-light {
-    font-family: "proxima-nova-alt", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-}
-.font-serif-regular {
-    font-family: "proxima-nova-alt", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-}
-.font-serif-semibold {
-    font-family: "proxima-nova-alt", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-}
-.font-serif-bold {
-    font-family: "proxima-nova-alt", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-}
-.font-serif-extrabold {
-    font-family: "proxima-nova-alt", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-}
 .font-spacing-md {
     letter-spacing: 2px;
 }
@@ -90,35 +61,39 @@ a:hover {
     text-align: center;
 }
 .bg-block-gray {
-    background-color: #ebedef;
     padding: 30px 0 60px 0;
+    background-color: #d5d6e0;
+    background-image: -webkit-linear-gradient(-0deg, #ffffff 0%, #d5d6e0 90%);
+    background-image: linear-gradient(-0deg, #ffffff 0%, #d5d6e0 90%);
 }
 /*=======* buttons *=======*/
 
 .btn {
-    font-family: "proxima-nova-alt", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-style: normal;
     font-weight: 300;
-    border-width: 2px;
-    border-style: solid;
     padding: 10px 15px;
     font-size: 20px;
     margin: 5px;
+    border: none;
+    border-radius: 5px;
 }
 .btn-primary {
-    border-color: #f47167;
-    background-color: #ffffff;
-    color: #f47167;
+    color: #fff;
+    background-color: #f47167;
+    box-shadow: 0 5px #b1180d;
 }
 .btn-primary:hover {
-    border-color: #f47167;
-    background-color: #f47167;
-    color: #ffffff;
+    background-color: #f14f42;
+    color: #eee;
+}
+.btn-primary:active {
+    background-color: #f14f42;
+    box-shadow: 0 3px #b1180d;
+    transform: translateY(2px);
 }
 .btn-primary:focus {
-    border-color: #f47167;
-    background-color: #ffffff;
-    color: #f47167;
+    background-color: #f14f42;
 }
 .btn-lg {
     padding: 10px 36px;
@@ -136,6 +111,170 @@ a:hover {
 .caption p {
     padding-top: 10px;
 }
+/*=====================* nav *==========================================================*/
+/*=======* navbar *=======*/
+
+.navbar {
+    background-color: #ffffff;
+    -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.navbar {
+    font-size: 20px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 300;
+}
+.navbar a {
+    color: #333333;
+}
+.navbar a:visited {
+    color: #333333;
+}
+.navbar li a:hover {
+    background-color: #eee;
+}
+.navbar li a:focus {
+    background-color: #eee;
+}
+.icon-bar {
+    background-color: #333333;
+}
+/*=====================* main *=============================================================*/
+
+#main {
+    padding: 130px 0 50px 0;
+    background-color: #ffffff;
+}
+#main h1 {
+    font-size: 36px;
+}
+#main h2 {
+    font-weight: 300;
+    font-size: 60px;
+    padding-bottom: 100px;
+}
+#main p {
+    padding: 30px 0 0 0;
+}
+#main .fa-angle-down {
+    display: block;
+    color: #868ba5;
+}
+#main .fa-angle-down:hover {
+    color: #f47167;
+}
+#main a {
+    text-decoration: none;
+}
+/*=====================* work *==========================================================*/
+
+#work h1 {
+    padding: 20px 0;
+}
+#work .btn {
+    margin: 40px 0;
+}
+#work .individual-project {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.06));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.06));
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 60px 0;
+    position: relative;
+}
+/*=====================* about *==========================================================*/
+
+#about {
+    padding: 80px 40px;
+}
+#about p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+#about .btn {
+    font-size: 16px;
+    background-color: #868ba5;
+    box-shadow: 0 5px #565a73;
+}
+#about .btn:hover {
+    background-color: #707594;
+    color: #eee;
+}
+#about .btn:active {
+    background-color: #707594;
+    box-shadow: 0 3px #565a73;
+    transform: translateY(2px);
+}
+#about .btn:focus {
+    background-color: #707594;
+}
+/*=====================* email *==========================================================*/
+
+#email {
+    padding: 100px 0;
+}
+#email h4 {
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+#email .btn {
+    font-size: 24px;
+}
+/*=====================* footer *==========================================================*/
+
+#footer {
+    background-color: #f47167;
+    background-image: -webkit-linear-gradient(-138deg, #f47167 0%, #868ba5 90%);
+    background-image: linear-gradient(-132deg, #f47167 0%, #868ba5 90%);
+    padding: 10px 0 20px 0;
+}
+#footer p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "brandon-grotesque", sans-serif;
+}
+.footer-copyright {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.footer-copyright:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.footer-copyright:active {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.footer-copyright:visited {
+    text-decoration: underline;
+    color: #ffffff;
+}
+/*=========* contact *==========*/
+
+#contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#contact a:visited {
+    color: #ffffff;
+}
+#contact a:hover {
+    color: #ebd9db;
+}
+#contact a:active {
+    color: #9b515a;
+}
+#contact ul {
+    text-align: center;
+    margin: 80px 0;
+}
+#contact li {
+    display: inline;
+    padding: 16px;
+}
 /* =============================== project ======================================== */
 
 .project {
@@ -147,15 +286,12 @@ a:hover {
 }
 /*=======* project-banners *=======*/
 /*.project-banner {
-    background-color: #112378;
-    padding: 0 0 100px 0;
-}
-.project-banner img {
-    padding: 0;
-    width: 100%;
+    background-color: #1e0743;
+    background-image: -webkit-linear-gradient(-138deg, #1e0743 0%, #f47167 90%);
+    background-image: linear-gradient(-132deg, #1e0743 0%, #f47167 90%);
+    padding: 10px 0 20px 0;
 }
 .project-banner h1 {
-    padding-top: 100px;
     color: #ffffff;
 }
 .project-banner h4 {
@@ -164,7 +300,6 @@ a:hover {
 
 #project-tagline {
     font-size: 32px;
-    font-family: "adobe-caslon-pro", serif;
     font-style: italic;
     font-weight: 100;
     text-align: center;
@@ -181,11 +316,12 @@ img.center-block {
 #project-links {
     padding: 40px 0 0 0;
     font-size: 20px;
-    font-family: "proxima-nova-alt", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 500;
 }
 #project-links a {
     color: #f47167;
+    text-decoration: none;
 }
 #project-links a:visited {
     color: #f47167;
@@ -222,251 +358,6 @@ img.center-block {
 .process-title {
     padding-left: 15px;
 }
-/*=====================* nav *==========================================================*/
-/*=======* navbar *=======*/
-
-.navbar {
-    background-color: #ffffff;
-    -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-}
-.navbar {
-    font-size: 20px;
-    font-family: "proxima-nova-alt", sans-serif;
-    font-weight: 300;
-}
-.navbar a {
-    color: #333333;
-}
-.navbar a:visited {
-    color: #333333;
-}
-.navbar li a:hover {
-    background-color: #eee;
-}
-.navbar li a:focus {
-    background-color: #eee;
-}
-.icon-bar {
-    background-color: #333333;
-}
-/*=====================* main *=============================================================*/
-
-#main {
-    padding: 130px 0 50px 0;
-    background-color: #ffffff;
-}
-#main h1 {
-    color: #f47167;
-}
-#main h2 {
-    color: #868ba5;
-    font-weight: 300;
-}
-#main h4 {
-    font-size: 50px;
-    margin-top: 30px;
-    font-weight: 300;
-}
-#main .btn {
-    border: none;
-}
-#main .fa-angle-down {
-    display: block;
-    padding: 30px 0 0 0;
-    color: #868ba5;
-}
-#main .fa-angle-down:hover {
-    color: #f47167;
-}
-#main a {
-    text-decoration: none;
-}
-/*=====================* work *==========================================================*/
-
-#work h1 {
-    padding: 20px 0;
-}
-#work .btn {
-    margin: 40px 0;
-}
-/*=======* runkeeper *=============*/
-
-#runkeeper {
-    background: url("/images/home_runkeeper.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 100px 0;
-}
-#runkeeper h1 {
-    color: #113148;
-}
-#runkeeper h3 {
-    color: #113148;
-}
-.btn-runkeeper {
-    background-color: #47b2e5;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-.btn-runkeeper:hover {
-    background-color: #113148;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-/*=======* webmd *==============*/
-
-#webmd {
-    background: url("/images/home_webmd.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 100px 0;
-    clear: both;
-}
-#webmd h1 {
-    color: #282828;
-}
-#webmd h3 {
-    color: #282828;
-}
-.btn-webmd {
-    background-color: #f26621;
-    border-color: #282828;
-    color: #282828;
-}
-.btn-webmd:hover {
-    background-color: #ffffff;
-    border-color: #282828;
-    color: #282828;
-}
-/*=======* timetogo *==============*/
-
-#timetogo {
-    background: url("/images/home_timetogo.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 100px 0;
-}
-#timetogo h1 {
-    color: #ffffff;
-}
-#timetogo h3 {
-    color: #ffffff;
-}
-.btn-timetogo {
-    background-color: #1abc9c;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-.btn-timetogo:hover {
-    background-color: #9b59b6;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-/*=======* truespirit *==============*/
-
-#truespirit {
-    background: url("/images/home_truespirit.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 100px;
-}
-#truespirit h1 {
-    color: #ffffff;
-}
-#truespirit h3 {
-    color: #ffffff;
-}
-.btn-truespirit {
-    background-color: #6698cb;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-.btn-truespirit:hover {
-    background-color: #081e31;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-/*=====================* about *==========================================================*/
-
-#about {
-    padding: 80px 40px;
-}
-#about p {
-    font-size: 20px;
-    margin: 20px 0;
-}
-/*=====================* email *==========================================================*/
-
-#email {
-    padding: 100px 0;
-}
-#email h4 {
-    font-size: 40px;
-    color: #333333;
-    margin-bottom: 16px;
-}
-#email .btn {
-    font-size: 24px;
-}
-/*=====================* footer *==========================================================*/
-
-#footer {
-    padding: 10px 0 20px 0;
-    background-color: #f47167;
-}
-#footer p {
-    font-size: 12px;
-    color: #ffffff;
-}
-.footer-copyright {
-    text-decoration: underline;
-    color: #ffffff;
-}
-.footer-copyright:hover {
-    text-decoration: underline;
-    color: #ffffff;
-}
-.footer-copyright:active {
-    text-decoration: underline;
-    color: #ffffff;
-}
-.footer-copyright:visited {
-    text-decoration: underline;
-    color: #ffffff;
-}
-/*=========* contact *==========*/
-
-#contact a {
-    color: #ffffff;
-    text-decoration: none;
-}
-#contact a:visited {
-    color: #ffffff;
-}
-#contact a:hover {
-    color: #fcd8d5;
-}
-#contact a:active {
-    color: #c0544c;
-}
-#contact ul {
-    text-align: center;
-    margin: 80px 0;
-}
-#contact li {
-    display: inline;
-    padding: 16px;
-}
 /*=====================* media queries *==========================================================*/
 /*=========* SM *==========*/
 
@@ -485,54 +376,13 @@ img.center-block {
         font-size: 16px;
         margin: 5px;
     }
-    .btn-primary {
-        border-color: #f47167;
-        background-color: #f47167;
-        color: #ffffff;
-    }
-    .btn-runkeeper {
-        background-color: #113148;
-        border-color: #ffffff;
-        color: #ffffff;
-    }
-    .btn-webmd {
-        background-color: #ffffff;
-        border-color: #000000;
-        color: #000000;
-    }
-    .btn-timetogo {
-        background-color: #9b59b6;
-        border-color: #ffffff;
-        color: #ffffff;
-    }
-    .btn-truespirit {
-        background-color: #081e31;
-        border-color: #ffffff;
-        color: #ffffff;
-    }
     #main {
         padding: 60px 0 10px 0;
     }
-    #runkeeper {
-        background: #46b3e6;
-        padding: 10px 0;
-    }
-    #webmd {
-        background: #f26621;
-        padding: 10px 0;
-    }
-    #timetogo {
-        background: #1abc9c;
-        padding: 10px 0;
-    }
-    #truespirit {
-        background: #6698cb;
-        padding: 10px 0;
+    #main h1 {
+        font-size: 24px;
     }
     #main h2 {
-        font-size: 30px;
-    }
-    #main h4 {
         font-size: 30px;
     }
     #about {
@@ -588,3 +438,7 @@ img.center-block {
     .process-number {
         border-bottom: 0px;
     }
+    #work .individual-project {
+        padding: 10px 0;
+    }
+}
